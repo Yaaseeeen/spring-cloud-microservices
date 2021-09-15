@@ -9,18 +9,18 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/bill_service_database
     username: postgres
-    password: root
+    password: 1
     driver-class-name: org.postgresql.Driver
 
   rabbitmq:
-    port: 5672
-    host: rabbitmq
+    port: 5675
+    host: localhost
     username: guest
     password: guest
     listener:
       direct:
         default-requeue-rejected: true
-#server:
-#  servlet:
-#    context-path: /deposits
-#  port: 8082
+server:
+  servlet:
+    context-path: /deposits
+  port: 8082
