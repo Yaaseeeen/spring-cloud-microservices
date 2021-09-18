@@ -3,8 +3,8 @@ server:
 
 spring:
   rabbitmq:
-    port: 5675
-    host: localhost
+    port: 5673
+    host: rabbitmq
     username: guest
     password: guest
     listener:
